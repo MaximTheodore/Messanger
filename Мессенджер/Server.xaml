@@ -1,0 +1,31 @@
+﻿<Page x:Class="Мессенджер.Server"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Мессенджер"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="400"
+      Title="Server">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Добро пожаловать в групповой чат" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBox x:Name="NUser" Margin="25" Grid.Row="1" 
+                 materialDesign:HintAssist.Hint="Введите свое имя пользователя"
+                 ></TextBox>
+        <Button Margin="20" Content="Я хочу создать чат"  Grid.Row="2" Click="Button_Click" ></Button>
+        <Button x:Name="Plus" Margin="20" Content="Присоединиться к чату"  Grid.Row="3" Click="Plus_Click" ></Button>
+        <TextBox x:Name="Ip_" Margin="25" Grid.Row="4" 
+                 materialDesign:HintAssist.Hint="IP адрес чата"
+                 
+                 ></TextBox>
+    </Grid>
+</Page>
